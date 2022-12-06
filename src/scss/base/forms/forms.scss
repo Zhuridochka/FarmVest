@@ -1,0 +1,88 @@
+//<FORM>
+// Снипет (HTML):
+.form {
+	max-width: rem(533);
+	border-radius: 10px;
+	background-color: #fff;
+	display: flex;
+	padding: rem(6);
+	gap: rem(10);
+	position: relative;
+	@media(max-width: rem(430)){
+		flex-direction: column;
+	}
+	&__row {
+	}
+	&__column {
+	}
+	&__line {
+	}
+	&__input {
+		height: rem(64);
+		flex: 1 1 auto;
+		padding: rem(20) ;
+		font-weight: 500;
+		font-size: rem(18);
+		line-height: math.div(20 , 15);
+		&::placeholder{
+			color: #263238;
+		}
+		&._form-error{
+			color: red;
+			&::placeholder{
+				color: red;
+			}
+		}
+		@media(max-width: rem(430)){
+			height: rem(40);
+		}
+	}
+	&__button {
+	}
+	&__error {
+		position: absolute;
+		top: 100%;
+		left: 0;
+		color: red;
+		font-size: rem(16);
+		margin-top: rem(14);
+		padding-left: rem(26);
+	}
+}
+//</FORM>
+
+// <BUTTONS>
+// Снипет (HTML): btn
+ @import "button";
+
+// <INPUTS>
+// Снипет (HTML): inp
+//@import "input";
+
+// <CHECK>
+// Снипет (HTML): chk
+// @import "checkbox";
+
+// <RADIO>
+// Снипет (HTML): opt
+// @import "radio";
+
+// <SELECT>
+// Снипет (HTML): sel
+// @import "select";
+
+// <RATING>
+// Снипет (HTML): rating
+// @import "rating";
+
+// <QUANTITY>
+// Снипет (HTML): qa
+// @import "quantity";
+
+// <RANGE>
+// Снипет (HTML):
+// @import "range";
+
+// <CALENDAR>
+// Снипет (HTML):
+// @import "datepicker";
